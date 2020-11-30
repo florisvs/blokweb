@@ -35,6 +35,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 1 (week 3)
+Ik heb het idee dat mijn HTML redelijk klopt. Ik denk dat CSS voor mij het lastigste gaat worden. 
 
 ### Stand van zaken
 
