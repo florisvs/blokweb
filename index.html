@@ -5,9 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 	<title>NOS.nl - Nieuws</title>
-	
 	<link href="styles/style.css" rel="stylesheet">
 </head>
 
@@ -31,6 +29,7 @@
 	</header>
 
 	<main>
+	<!-- Hier beginnen twee hoofdartikelen met afbeeldingen en tekst bovenaan-->
 		<section id="hoofdartikelen">
 		<article class="hoofdartikel">
 			<h1></h1>
@@ -90,23 +89,30 @@
 			</article>
 		</section>
 
+		<!--Deze aside is enkel met een bepaalde breedte te zien-->
+		<aside>
+			<a href="#laatste">Laatste</a>
+			<a href="#nieuws">Nieuws</a>
+			<a href="#sport">Sport</a>
+		</aside>
+
 		<!--Hierna begint wederom een section met links naar andere NPO sites, deze zijn als ware articles in de section-->
-		<section id="Live kanalen">
-				<article>
+		<section id="Livekanalen">
+				<article class="kanaalitems">
 					<h3>NPO Nieuws</h3>
 					<img src="/images/Nieuwslogo">
 					<a href="NPO Nieuws"></a>
 					<p>Bekijk op NPO Start</p>
 				</article>
 
-				<article>
+				<article class="kanaalitems">
 					<h3>NPO Politiek</h3>
 					<img src="/images/Politieklogo">
 					<a href="NPO Politiek">
 					<p>Bekijk op NPO Start</p>
 					</article>
 
-				<article>
+				<article class="kanaalitems">
 					<h3>NPO Radio 1</h3>
 					<img src="/images/Radiologo">
 					<a href="NPO Radio 1">
@@ -128,7 +134,7 @@
 		</section>
 
 		<!--Daaronder komt de tip van de redactie te staan, dit werkt in feite hetzelfde als de artikelen eerder-->
-		<section id="">
+		<section id="tipsvanderedactie">
 			<h2>Tip van de redactie</h2>
 			<a href="artikellink">
 				<article>
@@ -161,7 +167,7 @@
 		</section>
 
 		<!--Daaronder komen nog drie articles die linken naar andere sites-->
-		<section>
+		<section id="linksnaaranderewebsites">
 			<a href="artikellink">
 				<article>
 					<img src="/images/articleheader.jpg">
