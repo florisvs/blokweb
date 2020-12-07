@@ -3,6 +3,96 @@
   padding 0;
 }
 
+nav {
+  order:-1;  
+}
+
+nav button {
+  position:relative;
+  width:5em; height:2.5em;
+  font-size:1em;
+  background-color:pink;
+  border:none;
+  border-radius:.25em;
+  appearance:none;
+  cursor:pointer;
+  z-index:100;
+}
+
+nav button::before {
+  content:"\2630 ";
+  display:inline-block;
+  width:1em;
+  transform:scale(.75);
+}
+
+nav.toonMenu  button::before {
+  content:"\274C";
+}
+
+nav ul { 
+  margin:0; 
+  padding:4em 0;
+  display: none;
+  list-style:none;
+  position:fixed;
+  left:0; right:0; top:0; bottom:0;
+  z-index:50;
+}
+
+nav.toonMenu ul {
+  display: block;
+}
+
+li {
+  margin:0; padding:0;
+}
+
+li a {
+  display:block;
+}
+
+/* elke link heeft wel een eigen background-image */
+li:nth-of-type(1) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-castle.svg"); }
+li:nth-of-type(2) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-knight.svg"); }
+li:nth-of-type(3) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-ogre.svg"); }
+li:nth-of-type(4) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-queen.svg"); }
+li:nth-of-type(5) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-witch.svg"); }
+li:nth-of-type(6) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-wizard.svg"); }
+
+li.active a {
+  font-weight:bold;
+}
+
+@media (min-width:64em) {
+  nav {
+    /* jouw code hier */
+    order:0;  
+  }
+  
+  nav button {
+    /* jouw code hier */
+    display:none;
+  }
+  
+  nav ul {
+    /* jouw code hier */
+    position:relative;
+    padding:0;
+    transform:none;
+    background:none;
+    
+    /* new */
+    display:flex;
+  }
+  
+  nav a {
+    /* jouw code hier */
+    border:none;
+  }
+  
+}*/
+
 body {
   display:flex;
   flex-direction:column;
