@@ -66,28 +66,24 @@ li.active a {
 
 @media (min-width:64em) {
   nav {
-    /* jouw code hier */
     order:0;  
   }
   
   nav button {
-    /* jouw code hier */
     display:none;
   }
   
   nav ul {
-    /* jouw code hier */
+
     position:relative;
     padding:0;
     transform:none;
     background:none;
-    
-    /* new */
     display:flex;
   }
   
   nav a {
-    /* jouw code hier */
+
     border:none;
   }
   
@@ -112,15 +108,16 @@ nav {
 header {
   width: 100%;
   background-color: #f4f4f4;
+  display: flex;
 }
 
-header h1::before {
+nav::before {
   content:"\2630";
   position:absolute;
   width:35px;
   height:5px;
   display:block;
-  margin:10px 0;
+  margin:20px 0;
 }
 
 header h1 {
