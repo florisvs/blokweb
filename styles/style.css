@@ -1,6 +1,6 @@
 *,html{
   margin: 0;
-  padding 0;
+  padding: 0;
 }
 
 nav {
@@ -52,19 +52,11 @@ li a {
   display:block;
 }
 
-/* elke link heeft wel een eigen background-image */
-li:nth-of-type(1) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-castle.svg"); }
-li:nth-of-type(2) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-knight.svg"); }
-li:nth-of-type(3) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-ogre.svg"); }
-li:nth-of-type(4) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-queen.svg"); }
-li:nth-of-type(5) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-witch.svg"); }
-li:nth-of-type(6) a { background-image:url("https://www.sinds1971.nl/fed/images/icon-wizard.svg"); }
-
 li.active a {
   font-weight:bold;
 }
 
-@media (min-width:64em) {
+@media (min-width:45em) {
   nav {
     order:0;  
   }
@@ -74,7 +66,6 @@ li.active a {
   }
   
   nav ul {
-
     position:relative;
     padding:0;
     transform:none;
@@ -102,29 +93,45 @@ body {
 }
 
 nav {
-  display: ;
+  display:flex;
+  position: relative;
+  width: 35px;
+  height: 5px;
 }
 
 header {
   width: 100%;
   background-color: #f4f4f4;
   display: flex;
+  order: -1;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 nav::before {
   content:"\2630";
-  position:absolute;
-  width:35px;
-  height:5px;
   display:block;
-  margin:20px 0;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 header h1 {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxMTBweCIgaGVpZ2h0PSIzOXB4IiB2aWV3Qm94PSIwIDAgMTEwIDM5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPiAgICAgICAgPHRpdGxlPkxvZ29zL2xvZ28tbm9zPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxnIGlkPSJMb2dvcy9sb2dvLW5vcyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjUwMDAwMCwgMC4wMDAwMDApIj4gICAgICAgICAgICA8cGF0aCBkPSJNMTA5LjQxMTg5OCwyNi4zNjc4MDM3IEMxMDkuNDExODk4LDE4Ljk2NjMxNSAxMDUuODMxMzE1LDE2LjczODA0NDUgOTYuNDMyNjUwNSwxNC40Nzc1NDg0IEM5MS42MjcxNDQzLDEzLjM0NzMwMDMgOTAuMjkzNzgzMiwxMi43MDA5Mjg1IDkwLjI5Mzc4MzIsMTEuMzAxNDk1NiBDOTAuMjkzNzgzMiw5Ljk1NjU1NjIyIDkxLjA0MDU4MjYsOC45ODcxNjI1MyA5NC4xMzgxODgyLDguOTg3MTYyNTMgQzk3LjkyODIwMzUsOC45ODcxNjI1MyAxMDEuMjM4NDgyLDEwLjI3OTI0OTggMTA0LjU1MDM5LDEyLjUzOTc0NTggQzEwNC41NTAzOSwxMi41Mzk3NDU4IDEwOC45NDgyODgsNS41NTExMTY1NyAxMDkuNDExODk4LDQuMzU4ODI0NzEgQzEwNS42MTY2ODgsMS41NjA2MTU1MSAxMDEuMDI1NDgzLDAgOTQuNjcxOTg4NiwwIEM4NS42NDY4ODYzLDAgNzkuOTM0MDE3MSw0Ljc5MDE3NyA3OS45MzQwMTcxLDExLjg5MzM3NCBDNzkuOTM0MDE3MSwxOS40MjgyNTE1IDg0LjI1OTc4NywyMS45MDQwOTU0IDkzLjI4MjkzNTEsMjQuMDAzNDA4OSBDOTguMzAxNDQwNCwyNS4xODgxNTA0IDk5LjYzNjQyOTksMjYuMDQ4MjI4OCA5OS42MzY0Mjk5LDI3LjQ0NjM0ODYgQzk5LjYzNjQyOTksMjkuMjIzNjI1MSA5OC40NjIwMDM5LDI5Ljg2OTM0MDQgOTQuNzc4NDg4MSwyOS44NjkzNDA0IEM5MS4zMDc2NDU3LDI5Ljg2OTM0MDQgODYuNTU2MjAzNCwyNy45ODYzNTk2IDgzLjgzMjE2MDQsMjYuMTAyNzIyMyBMNzguODEzNjU1MSwzNC4yODIwMDIxIEM4Mi43MTE3OTg0LDM2Ljg2NDg2MzQgODguNTMxNDkyOCwzOC44NTc4MTYgOTQuNTYzODYwNiwzOC44NTc4MTYgQzEwMy41MzQ4OTksMzguODU3ODE2IDEwOS40MTE4OTgsMzUuNjE5NjY0NyAxMDkuNDExODk4LDI2LjY5MzYxNTkiIGlkPSJGaWxsLTYiIGZpbGw9IiM5NDk0OTQiPjwvcGF0aD4gICAgICAgICAgICA8cGF0aCBkPSJNMzcuMDg4Nzc4OSwxOS40Mjg5MDggQzM3LjA4ODc3ODksOC42OTgyMjE5MyA0NS44OTM4NDQyLDAgNTYuNzU2MDg4MywwIEM2Ny42MTg5ODczLDAgNzYuNDI1MzYyNSw4LjY5ODIyMTkzIDc2LjQyNTM2MjUsMTkuNDI4OTA4IEM3Ni40MjUzNjI1LDMwLjE1ODk0NzEgNjcuNjE4OTg3MywzOC44NTc4MTYgNTYuNzU2MDg4MywzOC44NTc4MTYgQzQ1Ljg5Mzg0NDIsMzguODU3ODE2IDM3LjA4ODc3ODksMzAuMTU4OTQ3MSAzNy4wODg3Nzg5LDE5LjQyODkwOCBNNDcuMTA4NDM3NiwxOS40Mjg5MDggQzQ3LjEwODQzNzYsMTQuMTY1MTM5NyA1MS40MjgxMTk5LDkuODk3NzA4OTcgNTYuNzU2MDg4Myw5Ljg5NzcwODk3IEM2Mi4wODUwMzkxLDkuODk3NzA4OTcgNjYuNDA1NzAzOCwxNC4xNjUxMzk3IDY2LjQwNTcwMzgsMTkuNDI4OTA4IEM2Ni40MDU3MDM4LDI0LjY5MjAyOTQgNjIuMDg1MDM5MSwyOC45NTkxMzY2IDU2Ljc1NjA4ODMsMjguOTU5MTM2NiBDNTEuNDI4MTE5OSwyOC45NTkxMzY2IDQ3LjEwODQzNzYsMjQuNjkyMDI5NCA0Ny4xMDg0Mzc2LDE5LjQyODkwOCIgaWQ9IkZpbGwtNyIgZmlsbD0iI0U2MUUxNCI+PC9wYXRoPiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zMi40NTI2ODE1LDM4Ljg1NzgxNiBMMzIuNDUyNjgxNSwxLjMxNDc2ODUyZS0xNCBMMjIuMjUzMjY3MywyLjYyOTUzNzA0ZS0xNCBMMjIuMjUzMjY3MywxOS45ODQwMTk3IEMyMi4yNTMyNjczLDE5Ljk4NDAxOTcgOS4wNzc2MzYyMiwxLjMxNDc2ODUyZS0xNCA4Ljk5MTIxOTEyLDEuMzE0NzY4NTJlLTE0IEM5LjA3NzYzNjIyLDEuMzE0NzY4NTJlLTE0IDAsMS4zMTQ3Njg1MmUtMTQgMCwxLjMxNDc2ODUyZS0xNCBMMCwzOC44NTc4MTYgTDEwLjE5OTQxNDIsMzguODU3ODE2IEwxMC4xOTk0MTQyLDE4Ljg3Mzc5NjQgTDIzLjYwMTk1MDIsMzguODU3ODE2IEwzMi40NTI2ODE1LDM4Ljg1NzgxNiBaIiBpZD0iRmlsbC01IiBmaWxsPSIjOTQ5NDk0Ij48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=);
   background-size:100% 100%;
   width:80px;
-  height:29px;
+  height:40px;
+}
+
+header>ul {display:flex;
+  list-style:none;
+  margin-left: auto;
+}
+
+header>ul img{
+  width: 50px;
 }
 
 header h1 span {
@@ -149,7 +156,6 @@ header h1 span {
 }
 
 .artikels {
-  ;
 }
 
 
@@ -165,4 +171,10 @@ footer {
   clear:both;
   background-color: #f4f4f4;
   width: 100%;
+}
+
+@media only screen and (min-width: 45em) {
+  nav::before {
+    display: none;
+  }
 }
