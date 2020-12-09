@@ -61,21 +61,12 @@ li.active a {
     order:0;  
   }
   
-  nav button {
-    display:none;
-  }
-  
   nav ul {
     position:relative;
     padding:0;
     transform:none;
     background:none;
     display:flex;
-  }
-  
-  nav a {
-
-    border:none;
   }
   
 }*/
@@ -96,7 +87,7 @@ nav {
   display:flex;
   position: relative;
   width: 35px;
-  height: 5px;
+  height: 30px;
 }
 
 header {
@@ -106,7 +97,6 @@ header {
   order: -1;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
 }
 
 nav::before {
@@ -132,32 +122,29 @@ header>ul {display:flex;
 
 header>ul img{
   width: 50px;
+  height: 50px;
 }
+
+header ul> li:first-of-type img{
+  width: 100px;
+}
+
 
 header h1 span {
   display:none;
 }
 
-.hoofdartikel image{
+main section:first-of-type{
+  width: 100vw;
+}
+
+main section:first-of-type article{
   width: 100%;
-  margin:0, 0, 0, 0,;
-  position:absolute;
 }
 
-.hoofdartikel h1{
-  position:relative;
-  left:0; right:0; bottom:0;
-  margin:0; padding:.5em .5em .5em;
-  color:white;
+main section:first-of-type article img{
+  width: 100%;
 }
-
-.artikellijst {
-
-}
-
-.artikels {
-}
-
 
 nav {
   background-color:	#f4f4f4;
