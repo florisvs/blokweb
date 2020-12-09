@@ -1,6 +1,7 @@
 *,html{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 nav {
@@ -120,7 +121,6 @@ header ul> li:first-of-type img{
   width: 100px;
 }
 
-
 header h1 span {
   display:none;
 }
@@ -131,15 +131,33 @@ main section:first-of-type{
 
 main section:first-of-type article{
   width: 100%;
+  position: relative;
+}
+
+main section:first-of-type article h1{
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: white;
 }
 
 main section:first-of-type article img{
   width: 100%;
 }
 
+
 nav {
   background-color:	#f4f4f4;
 } 
+
+section:nth-of-type(2){
+  background-color: #f4f4f4;
+
+}
+
+section:nth-of-type(2) article{
+  display: flex;
+}
 
 aside {
   
