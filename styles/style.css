@@ -125,8 +125,7 @@ header h1 span {
   display:none;
 }
 
-main section:first-of-type{
-  width: 100vw;
+main section:first-of-type{;
 }
 
 main section:first-of-type article{
@@ -143,6 +142,7 @@ main section:first-of-type article h1{
 
 main section:first-of-type article img{
   width: 100%;
+  display: block;
 }
 
 
