@@ -35,7 +35,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Voortgang 1 (week 3)
-Ik heb het idee dat mijn HTML redelijk klopt. Ik denk dat CSS voor mij het lastigste gaat worden. 
+Ik heb het idee dat mijn HTML redelijk klopt. Ik denk dat CSS voor mij het lastigste gaat worden. Ik heb best een redelijke HTML basis staan op dit moment! Het is semantisch ook relatief correct, heb ik het idee. 
 
 ### Stand van zaken
 
