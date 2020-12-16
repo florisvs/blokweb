@@ -195,22 +195,69 @@ main section:first-of-type article h1{
 main section:first-of-type article img{
   width: 100%;
   display: block;
+
 }
 
+section:nth-of-type(2){
+ margin: 1.5em 0em;
+ background-color: #f4f4f4;
+}
+
+section:nth-of-type(2) article{
+  height: 5em;
+  width: 100%;
+  padding: 0.5em 1em;
+}
+
+section:nth-of-type(2) img{
+  height: 100%;
+  order: -1;
+  margin-right: 0.75em;
+}
+
+
+section:nth-of-type(3){
+}
+
+section:nth-of-type(3) article{
+  width: 100%;
+  padding: 0.5em 1em;
+  display:flex;
+  border: 1px solid gray;
+}
+
+section:nth-of-type(3) img{
+  order: -1;
+}
 
 nav {
   background-color:	#f4f4f4;
 } 
 
-section:nth-of-type(2){
-  background-color: #f4f4f4;
 
-}
-
-section:nth-of-type(2) article{
+section:nth-of-type(4) article{
   display: flex;
   align-items: center;
 }
+
+section:nth-of-type(4) article p{
+  display:none;
+}
+
+section:nth-of-type(4){
+  margin: 1.5em 0em;
+ }
+ 
+ section:nth-of-type(4) article{
+   height: 5em;
+   width: 100%;
+   padding: 0.5em 1em;
+ }
+ 
+ section:nth-of-type(4) img{
+   height: 100%;
+   margin-right: 0.75em;
+ }
 
 aside {
   
@@ -222,9 +269,15 @@ footer {
   width: 100%;
 }
 
+@media only screen and (min-width: 35em) {
+  section:nth-of-type(2) article p{
+    display: block;
+    }
+  }
+
 @media only screen and (min-width: 45em) {
   nav::before {
     display: none;
-  }
   
+  }
 }
