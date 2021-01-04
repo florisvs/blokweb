@@ -381,25 +381,18 @@ section:nth-of-type(5) h2 {
 }
 
 /* kleine klikbare images */
-
-section:last-of-type article {
-  justify-content: center;
-}
-
 section:last-of-type article h3 {
-  position: absolute;
-  bottom: 5%;
-  left: 5%;
+  position: relative;
   color: white;
   font-weight: bold;
   font-size: 1.25em;
 }
 
 section:last-of-type article img {
-  width: 80%;
+  width: 60%;
+  height: 40%;
   display: block;
-  height: 40;
-  justify-content: center;
+  margin: 1em;
 }
 
 /*andere shit hier */
