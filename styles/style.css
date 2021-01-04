@@ -259,9 +259,6 @@ header h1 span {
   display: none;
 }
 
-main section:first-of-type {
-}
-
 main section:first-of-type article {
   width: 100%;
   position: relative;
@@ -290,14 +287,14 @@ section:nth-of-type(2) {
 section:nth-of-type(2) article {
   display: flex;
   flex-direction: row-reverse;
-  height: 5em;
+  height: 6em;
   margin-bottom: 0.75em;
 }
 
 section:nth-of-type(2) h2 {
   width: 88%;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
 }
 
 section:nth-of-type(2) a,
@@ -309,7 +306,7 @@ section:nth-of-type(2) figure {
   display: block;
   width: 10em;
   overflow: hidden;
-  margin-left: 0.2em;
+  margin-left: 1em;
 }
 section:nth-of-type(2) figure img {
   width: 100%;
@@ -322,21 +319,43 @@ section:nth-of-type(3) {
   width: 100%;
   padding: 0.5em 1em;
   display: flex;
-  flex-direction: row;
-  border: 1px solid gray;
+  flex-direction: column;
 }
 
-/* */
-
-nav {
-  background-color: #f4f4f4;
+section:nth-of-type(3) h4 {
+  color: gray;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 0.5em;
 }
 
-section:nth-of-type(5) article {
-  display: flex;
-  align-items: center;
+section:nth-of-type(3) article {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-top: 0.5em;
 }
 
+section:nth-of-type(3) h3 {
+  font-weight: bold;
+}
+
+section:nth-of-type(3) p {
+  color: gray;
+}
+
+/*e-mail reclame die iedereen haat*/
+section:nth-of-type(4) {
+  width: 100%;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+}
+
+section:nth-of-type(4) h4 {
+  color: gray;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 0.5em;
+}
+
+/*tip van de redactie */
 section:nth-of-type(5) {
   margin: 1.5em 0em;
 }
@@ -345,6 +364,10 @@ section:nth-of-type(5) article {
   height: 5em;
   width: 100%;
   padding: 0.5em 1em;
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
 }
 
 section:nth-of-type(5) img {
@@ -354,6 +377,35 @@ section:nth-of-type(5) img {
 
 section:nth-of-type(5) h2 {
   padding: 0.5em 1em;
+  font-weight: bold;
+}
+
+/* kleine klikbare images */
+
+section:last-of-type article {
+  justify-content: center;
+}
+
+section:last-of-type article h3 {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+section:last-of-type article img {
+  width: 80%;
+  display: block;
+  height: 40;
+  justify-content: center;
+}
+
+/*andere shit hier */
+
+nav {
+  background-color: #f4f4f4;
 }
 
 aside {
@@ -392,6 +444,8 @@ footer a:link :visited {
 footer li {
   margin: 0.75em 0;
 }
+
+/*Scaleable dingen*/
 
 @media only screen and (min-width: 35em) {
   section:nth-of-type(2) article p {
