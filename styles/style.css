@@ -193,14 +193,13 @@ li.active a {
     display: flex;
   }
 }
-*/ body {
+body {
   display: flex;
   flex-direction: column;
   font-family: "Arial, Helvetica, sans-serif";
   line-height: 1.65em;
-  font-size: normal;
   min-width: 16.66667em;
-  color: 333;
+  color: #333;
   min-height: 100vh;
   position: relative;
 }
@@ -286,27 +285,35 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(2) article {
-  height: 5em;
-  padding: 0.5em 1em;
   display: flex;
-  width: 100%;
+  flex-direction: row-reverse;
+  height: 5em;
+  margin-bottom: .75em;
 }
 
-section:nth-of-type(2) img {
-  width: 100%;
-  order: -1;
-  margin-right: 0.75em;
+section:nth-of-type(2) h2 {
+  width: 88%;
+  margin-right: .2em;
+  margin-left: .2em;
+
 }
 
+section:nth-of-type(2) a,
 section:nth-of-type(2) p {
   display: none;
 }
 
 section:nth-of-type(2) figure {
-  overflow: hidden;
-  order: -1;
+  display: block;
   width: 10em;
+  overflow: hidden;
+  margin-left: .2em;
 }
+section:nth-of-type(2) figure img {
+  width: 100%;
+  height: 100%;
+}
+
 
 /*Hierna komen livekanalen*/
 
