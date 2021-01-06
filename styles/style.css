@@ -437,6 +437,32 @@ section:nth-of-type(5) h2 {
   font-weight: bold;
 }
 
+/* aside */
+aside {
+  margin: 1.5em 1em;
+  padding: 0.2em 0.2em;
+}
+
+aside article{
+  height: 5em;
+  width: 100%;
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2em;
+}
+
+aside img{
+  height: 100%;
+  margin-left: 1em;
+}
+
+aside h2 {
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+
 /* kleine klikbare images */
 section:last-of-type {
   margin: 1.5em;
@@ -527,7 +553,7 @@ footer li {
   justify-content: center;
   }
 
-  
+
 
   section:nth-of-type(2) article p {
     display: block;
