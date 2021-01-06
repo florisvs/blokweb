@@ -508,17 +508,9 @@ footer li {
   margin: 0.75em 0;
 }
 
-/*Scaleable dingen*/
-
-@media only screen and (min-width: 35em) {
-  section:nth-of-type(2) article p {
-    display: block;
-  }
-}
-
 /*vanaf hier komen er twee artikelen op een rij*/
 
-@media only screen and (min-width: 55em) {
+@media only screen and (min-width: 50em) {
   nav::before {
     display: none;
   }
@@ -526,14 +518,19 @@ footer li {
   main section:first-of-type article {
     float: left;
     width: 50%;
+    justify-content: space-around;
   }
 
-  section:nth-of-type(2) a {
-    flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2.22em 1.78em;
+  section:nth-of-type(2) article {
+    display: flex;
+  align-items: center;
+  justify-content: center;
   }
+
+  
+
+  section:nth-of-type(2) article p {
+    display: block;
 }
 
 @media only screen and (min-width: 70em) {
