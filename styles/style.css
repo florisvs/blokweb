@@ -259,6 +259,8 @@ header h1 span {
   display: none;
 }
 
+/* twee hoofdfoto's */
+
 main section:first-of-type article {
   width: 100%;
   position: relative;
@@ -514,10 +516,27 @@ footer li {
   }
 }
 
-@media only screen and (min-width: 45em) {
+/*vanaf hier komen er twee artikelen op een rij*/
+
+@media only screen and (min-width: 55em) {
   nav::before {
     display: none;
   }
+
+  main section:first-of-type article {
+    float: left;
+    width: 50%;
+  }
+
+  section:nth-of-type(2) a {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.22em 1.78em;
+  }
+}
+
+@media only screen and (min-width: 70em) {
   aside {
     display: block;
   }
