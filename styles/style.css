@@ -443,7 +443,7 @@ aside {
   padding: 0.2em 0.2em;
 }
 
-aside article{
+aside article {
   height: 5em;
   width: 100%;
   margin-top: 1.5em;
@@ -453,7 +453,7 @@ aside article{
   padding-bottom: 2em;
 }
 
-aside img{
+aside img {
   height: 100%;
   margin-left: 1em;
 }
@@ -547,20 +547,24 @@ footer li {
     justify-content: space-around;
   }
 
+  /* artikelen schalen van 2 naar 3 naast elkaar */
+
   section:nth-of-type(2) article {
-    display: flex;
-  align-items: center;
-  justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
   }
-
-
 
   section:nth-of-type(2) article p {
     display: block;
-}
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
 
-@media only screen and (min-width: 70em) {
-  aside {
-    display: block;
+  @media only screen and (min-width: 70em) {
+    aside {
+      display: block;
+    }
   }
 }
