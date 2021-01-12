@@ -6,8 +6,9 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-www.nos.nl
-Marvin Sernee :-)
+- www.nos.nl
+- Marvin Sernee :-)
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 
 
@@ -17,25 +18,22 @@ Ik moet nog het een en ander doen aan mijn CSS, vooral qua positionering, opzich
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
-
-
+<img src="images/eindresultaat1.png" alt="homepagina op mobiel">
+<img src="images/eindresultaat2.png" alt="homepagina op tablet">
+<img src="images/eindresultaat3.png" alt="homepagina op desktop">
 
 ## Voortgang 3 (week 6)
-
-Veel gedaan aan css deze week, o.a. positionering van elementen. Mobile versie (niet responsive) zit vrij goed in elkaar zo. 
+Veel gedaan aan css deze week, o.a. positionering van elementen. Mobile versie (niet responsive) zit vrij goed in elkaar zo. De volgende stap is om te proberen om alles ook schaalbaar mogelijk te maken, en dit gaat heel erg lastig worden voor mij. Ik hoop dat ik hier hulp kan inschakelen van een studentassistent. 
 
 
 ## Voortgang 2 (week 5)
-Veel gedaan aan HTML en CSS. Semantiek voelt goed aan.
-
+De basis gelegd aan mijn CSS. Blijkt gewoon heel erg lastig te zijn, vooral om alles ook op redelijke wijze schaalbaar te maken. De NOS-site heeft wel het een en ander qua structuur al vrij goed staan, wat wel heel erg helpt. 
 
 ## Voortgang 1 (week 3)
-Ik heb het idee dat mijn HTML redelijk klopt. Ik denk dat CSS voor mij het lastigste gaat worden. Ik heb best een redelijke HTML basis staan op dit moment! Het is semantisch ook relatief correct, heb ik het idee. 
+Ik heb het idee dat mijn HTML redelijk klopt. Ik denk dat CSS voor mij het lastigste gaat worden. Ik heb best een redelijke HTML basis staan op dit moment! Het is semantisch ook relatief correct, heb ik het idee. Ik maak verder ook niet 'nutteloos' gebruik van div'jes en ID's en heb telkens alles gedeclareerd met first of type in mijn css.
 
 ### Stand van zaken
-
--dit ging goed & dit was lastig-
+Wat goed ging is dat ik  al vrij ver was met de opbouw van mijn HTML. Hierin liep ik een beetje voor op de rest van mijn studiegenoten.
 
 **Screenshot(s):**
 
