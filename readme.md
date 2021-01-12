@@ -43,18 +43,10 @@ Ik heb het idee dat mijn HTML redelijk klopt. Ik denk dat CSS voor mij het lasti
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
+We hebben het format dat iedereen met wat punten aankwam 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
-
+Opzich heb ik de hoofdlijnen wel redelijk op orde staan. De HTML kan ik echter nog beter doen: zo moet ik bijvoorbeeld meer in volgorde neerzetten naar hoe ik het uiteindelijk ook op de website moet laten zien.
 
 
 ## Breakdownschets (week 1)
