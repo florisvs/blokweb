@@ -628,6 +628,7 @@ footer li {
     }
 
     aside {
+      display: block;
       float: right;
       overflow: hidden;
       width: 25%;
@@ -702,15 +703,29 @@ footer li {
       font-size: 0.85714em;
       color: #999;
     }
-
-    main {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    main section:nth-child(1) {
-      min-width: 100%;
-      width: 100%;
-    }
   }
+}
+
+/*vanaf hier komt alles voor mijn tweede pagina*/
+
+#artikelpagina p {
+  display: block;
+  max-width: 35.555rem;
+  margin: 0 0 1.4444em;
+}
+
+#artikelpagina section {
+  margin: 2em;
+}
+
+#artikelpagina h1 {
+  font-size: 1.44em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: em;
+}
+
+#artikelpagina main img {
+  width: 100%;
+  height: auto;
 }
