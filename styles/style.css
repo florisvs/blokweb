@@ -439,6 +439,7 @@ section:nth-of-type(5) h2 {
 
 /* aside */
 aside {
+  display: none;
   margin: 1.5em 1em;
   padding: 0.2em 0.2em;
 }
