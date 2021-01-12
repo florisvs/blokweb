@@ -325,9 +325,6 @@ section:nth-of-type(2) img {
   order: -1;
 }
 
-section:nth-of-type(2) link {
-}
-
 /*Hierna komen livekanalen*/
 
 section:nth-of-type(3) {
@@ -491,16 +488,13 @@ section:last-of-type article img {
   width: 100%;
   display: block;
   height: 100%;
+  object-fit: cover;
 }
 
 /*andere shit hier */
 
 nav {
   background-color: #f4f4f4;
-}
-
-aside {
-  display: none;
 }
 
 footer h1 {
@@ -544,6 +538,17 @@ footer li {
     display: none;
   }
 
+  h1 {
+    margin-right: 2em;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 2em;
+    font: inherit;
+  }
+
   main section:first-of-type article {
     width: 100%;
   }
@@ -583,14 +588,128 @@ footer li {
     margin-bottom: 0.75em;
   }
 
-  @media only screen and (min-width: 70em) {
-    aside {
+  @media only screen and (min-width: 56.25em) {
+    /* hier komen de artikelen met 3 naast elkaar ipv 2*/
+    section:nth-of-type(2) {
+      justify-content: space-evenly;
+      float: left;
+      width: 70%;
+    }
+
+    section:nth-of-type(2) article {
+      max-width: 30%;
+    }
+
+    section:nth-of-type(2) article a {
+      width: 100%;
+      flex-direction: column;
+      justify-content: unset;
+    }
+
+    section:nth-of-type(2) article h2 {
+      font-weight: bold;
+      width: 80%;
+      justify-content: center;
+      margin-bottom: 0.5em;
+    }
+
+    section:nth-of-type(2) article p {
+      width: 100%;
       display: block;
-      20%
+    }
 
-      articles 75%
+    section:nth-of-type(2) article img {
+      width: 100%;
+      height: 15em;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 0.75em;
+    }
 
-      flex-wrap: ;
+    aside {
+      float: right;
+      overflow: hidden;
+      width: 25%;
+      width: calc(300px);
+    }
+
+    aside ul {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    aside ul li {
+      display: inline-block;
+      padding: 0 0 0.2em;
+      margin-right: 1em;
+      top: 1px;
+      text-transform: uppercase;
+      font-size: 0.78571em;
+      color: #999;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    aside ul li:nth-child(1) {
+      color: #e61e14;
+      border-bottom: 2px solid #e61e14;
+    }
+
+    aside ol {
+      margin: 0;
+      list-style: none;
+      line-height: 1.25;
+      padding: 0;
+    }
+
+    aside ol li {
+      display: block;
+      font-size: 0.77778em;
+      min-height: 2em;
+      height: auto;
+      margin-bottom: 0.8em;
+    }
+
+    aside ol li a {
+      display: block;
+      transition: color 0.2s ease-in-out;
+      text-decoration: none;
+      color: #333;
+    }
+
+    aside ol li figure {
+      height: auto;
+      max-width: 60px;
+      margin: 0;
+      float: right;
+      position: relative;
+      line-height: 0;
+      display: block;
+    }
+
+    aside ol li figure img {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      border: 0;
+    }
+
+    aside ol li time {
+      padding-right: 5em;
+      font-size: 0.85714em;
+      color: #999;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    main section:nth-child(1) {
+      min-width: 100%;
+      width: 100%;
     }
   }
 }
