@@ -6,15 +6,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+www.nos.nl
+Marvin Sernee :-)
 
 
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Ik moet nog het een en ander doen aan mijn CSS, vooral qua positionering, opzich heb ik alle elementen wel die ik wil laten zien, maar moet ik nog een aside hebben die rechts uitlijnt bijvoorbeeld.
 
 **Screenshot(s):**
 
@@ -24,14 +23,11 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
-
+Veel gedaan aan css deze week, o.a. positionering van elementen. Mobile versie (niet responsive) zit vrij goed in elkaar zo. 
 
 
 ## Voortgang 2 (week 5)
-
--same as voortgang 1-
-
+Veel gedaan aan HTML en CSS. Semantiek voelt goed aan.
 
 
 ## Voortgang 1 (week 3)
