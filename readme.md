@@ -19,7 +19,7 @@ Ik moet nog het een en ander doen aan mijn CSS, vooral qua positionering, opzich
 **Screenshot(s):**
 
 <img src="images/eindresultaat1.png" alt="homepagina op mobiel">
-<img src="images/eindresultaat2.png" alt="homepagina op tablet">
+<img src="images/Eindresultaat2.png" alt="homepagina op tablet">
 <img src="images/eindresultaat3.png" alt="homepagina op desktop">
 
 ## Voortgang 3 (week 6)
