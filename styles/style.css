@@ -729,11 +729,16 @@ footer li {
 }
 
 /*vanaf hier komt alles voor mijn tweede pagina*/
+#artikelpagina main img {
+  width: 100%;
+  height: auto;
+}
 
 #artikelpagina p {
   display: block;
   max-width: 35.555rem;
   margin: 0 0 1.4444em;
+  line-height: 1.7em;
 }
 
 #artikelpagina section {
@@ -744,10 +749,6 @@ footer li {
   font-size: 1.44em;
   font-weight: 700;
   line-height: 1.2;
-  margin: em;
 }
 
-#artikelpagina main img {
-  width: 100%;
-  height: auto;
-}
+/* media query: vanaf 55 em wordt het een artikel dat middenin uitgelijnd wordt */
