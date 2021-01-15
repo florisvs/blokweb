@@ -163,15 +163,31 @@ nav button::before {
   transform: scale(0.75);
 }
 
+nav ul li {
+  border-top: 1px solid #e3e3e3;
+  font-size: 1em;
+  padding: 1.25em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 nav.toonMenu button::before {
   content: "\274C";
 }
 
 nav ul {
+  background: #f4f4f4;
   margin: 0;
-  display: none;
+  /* display: none; */
   list-style: none;
-  position: fixed;
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100%;
   z-index: 50;
 }
 
@@ -189,23 +205,25 @@ li.active a {
   }
 
   nav ul {
-    position: relative;
     padding: 0;
     transform: none;
     background: none;
     display: flex;
+    top: 0;
   }
 }
+
 body {
   font-family: "Arial, Helvetica, sans-serif";
   line-height: 1.65em;
   min-width: 16.66667em;
+  display: table;
   color: #333;
 }
 
 nav {
   display: flex;
-  position: relative;
+  /* position: relative; */
   width: 35px;
   height: 30px;
 }
@@ -216,6 +234,7 @@ header {
   display: flex;
   order: -1;
   align-items: center;
+  position: relative;
   justify-content: center;
   padding: 0px 20px;
 }
@@ -224,9 +243,9 @@ nav::before {
   content: "\2630";
   display: block;
   font-size: 1.5em;
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
 }
 
 header h1 {
@@ -594,7 +613,7 @@ footer li {
     section:nth-of-type(2) {
       justify-content: space-evenly;
       float: left;
-      width: 70%;
+      width: 65%;
     }
 
     section:nth-of-type(2) article {
@@ -632,7 +651,7 @@ footer li {
       right: 0;
       overflow: hidden;
       width: 30%;
-      width: calc(300px);
+      /* width: calc(300px); */
     }
 
     aside ul {
