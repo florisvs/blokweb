@@ -734,7 +734,7 @@ footer li {
   height: auto;
 }
 
-#artikelpagina p {
+#artikelenpagina #artikelpagina p {
   display: block;
   max-width: 35.555rem;
   margin: 0 0 1.4444em;
