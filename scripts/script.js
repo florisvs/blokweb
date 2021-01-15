@@ -1,10 +1,14 @@
 // JavaScript Document
 
-var deButton = document.querySelector("nav button::before");
-
+var deButton = document.querySelector("nav");
+var navUl = document.querySelector("nav ul")
 deButton.addEventListener("click", toggleMenu);
+navUl.addEventListener("click", stopPropagation)
 
-function toggleMenu(event) {
-  deNav = event.target.parentNode;
-  deNav.classList.toggle("toonMenu");
+function toggleMenu() {
+  navUl.classList.toggle("toonMenu");
+}
+
+function stopPropagation(event){
+  event.stopPropagation()
 }
