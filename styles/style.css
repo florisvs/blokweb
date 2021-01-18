@@ -735,13 +735,14 @@ footer li {
 }
 
 #artikelenpagina main section:first-of-type article {
-  height: auto;
+  min-height: auto;
 }
 
 /* tweede section de tekst onder de image */
 #artikelenpagina main section:nth-of-type(2) h2 {
-  font-size: 0.5em;
+  font-size: 0.8em;
   padding: 0%;
+  margin-left: 1.5em;
 }
 
 /* derde section is de tekst van het artikel */
@@ -779,11 +780,18 @@ footer li {
   justify-content: space-between;
 }
 
-#artikelenpagina main section:nth-of-type(4) a:hover h2 {
+#artikelenpagina main section:nth-of-type(4) a:hover h3 {
   color: red;
 }
 
 #artikelenpagina main section:nth-of-type(4) h2 {
+  line-height: 1.4;
+  font-weight: 700;
+  color: #333333;
+  margin-left: 1em;
+}
+
+#artikelenpagina main section:nth-of-type(4) h3 {
   width: 60%;
   transition: color 0.2s ease-in-out;
 }
@@ -836,8 +844,6 @@ footer li {
 }
 
 #artikelenpagina main section:nth-of-type(6) img {
-  display: block;
   width: 35%;
-  overflow: hidden;
   order: -1;
 }
