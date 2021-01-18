@@ -728,27 +728,116 @@ footer li {
   }
 }
 
-/*vanaf hier komt alles voor mijn tweede pagina*/
-#artikelpagina main img {
+/* eerste sectie is de foto in het midden */
+#artikelenpagina main section:first-of-type img {
   width: 100%;
   height: auto;
 }
 
-#artikelenpagina #artikelpagina p {
-  display: block;
+#artikelenpagina main section:first-of-type article {
+  height: auto;
+}
+
+/* tweede section de tekst onder de image */
+#artikelenpagina main section:nth-of-type(2) h2 {
+  font-size: 0.5em;
+  padding: 0%;
+}
+
+/* derde section is de tekst van het artikel */
+#artikelenpagina main section:nth-of-type(3) h1 {
+  font-size: 1.44em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 1.33rem;
+}
+
+#artikelenpagina main section:nth-of-type(3) p {
   max-width: 35.555rem;
   margin: 0 0 1.4444em;
   line-height: 1.7em;
 }
 
-#artikelpagina section {
-  margin: 2em;
+/* vierde section de bekijk ook artikelen */
+#artikelenpagina main section:nth-of-type(4) {
+  margin: 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#artikelpagina h1 {
-  font-size: 1.44em;
-  font-weight: 700;
-  line-height: 1.2;
+#artikelenpagina main section:nth-of-type(4) article {
+  display: flex;
+  justify-content: center;
 }
 
-/* media query: vanaf 55 em wordt het een artikel dat middenin uitgelijnd wordt */
+#artikelenpagina main section:nth-of-type(4) a {
+  margin-bottom: 0.75em;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+#artikelenpagina main section:nth-of-type(4) a:hover h2 {
+  color: red;
+}
+
+#artikelenpagina main section:nth-of-type(4) h2 {
+  width: 60%;
+  transition: color 0.2s ease-in-out;
+}
+
+#artikelenpagina main section:nth-of-type(4) p {
+  display: none;
+}
+
+#artikelenpagina main section:nth-of-type(4) img {
+  display: block;
+  width: 35%;
+  overflow: hidden;
+  order: -1;
+}
+
+/* vijfde de deel dit artikel */
+
+/* zesde de drie artikelen op een rij */
+#artikelenpagina main section:nth-of-type(6) {
+  margin: 1.5em 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#artikelenpagina main section:nth-of-type(6) article {
+  display: flex;
+  justify-content: center;
+}
+
+#artikelenpagina main section:nth-of-type(6) a {
+  margin-bottom: 0.75em;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+#artikelenpagina main section:nth-of-type(6) a:hover h2 {
+  color: red;
+}
+
+#artikelenpagina main section:nth-of-type(6) h2 {
+  width: 60%;
+  transition: color 0.2s ease-in-out;
+}
+
+#artikelenpagina main section:nth-of-type(6) p {
+  display: none;
+}
+
+#artikelenpagina main section:nth-of-type(6) img {
+  display: block;
+  width: 35%;
+  overflow: hidden;
+  order: -1;
+}
